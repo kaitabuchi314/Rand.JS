@@ -6,7 +6,7 @@ function rand() {
 };
 
 rand.prototype.pseudoSeeded = function(seed) {
-    seed *= 569203485892375814652947562934697978769;
-    seed = seed / 34564766565669879465245476234523452345345346456775823424;
+    seed *= 5692034 + MAX_SAFE_INTEGER + 348920359283 + 49785235;
+    seed = seed / Math.MAX_SAFE_INTEGER;
     return (seed - 0) / (Number.MAX_SAFE_INTEGER - 0);
 };
