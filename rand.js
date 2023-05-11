@@ -6,7 +6,7 @@ function rand() {
 };
 
 rand.prototype.pseudoSeeded = function(seed) {
-    seed *= 5692034 + MAX_SAFE_INTEGER + 348920359283 + 49785235;
-    seed = seed / Math.MAX_SAFE_INTEGER;
+    seed *= 5692034 + Number.MAX_SAFE_INTEGER + 348920359283 + 49785235;
+    seed = seed / Number.MAX_SAFE_INTEGER;
     return (seed - 0) / (Number.MAX_SAFE_INTEGER - 0);
 };
